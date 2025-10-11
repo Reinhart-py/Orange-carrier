@@ -29,3 +29,25 @@ This single command will install dependencies, clone the repo, install Python pa
 
 ```bash
 pkg update && pkg upgrade -y && pkg install git python -y && git clone https://github.com/Reinhart-py/Orange-carrier.git && cd Orange-carrier && pip install -r requirements.txt && python run.py
+```
+
+
+**Configuration**
+
+The bot uses a persistent orange_config.json file to store your credentials.
+
+First Run: The command above will launch a setup wizard. You will be prompted to enter your BOT_TOKEN, CHAT_ID, optional LOG_CHAT_ID, and account details.
+
+Subsequent Runs: The bot will load the existing config and ask if you want to edit it (Edit? (y/N)). Pressing Enter will run the bot with the saved credentials.
+
+------------------------------
+
+
+**Operation**
+
+The bot runs silently in the background after a brief cinematic intro. All operational logs and errors are sent to the LOG_CHAT_ID if configured.
+
+To stop the bot, press Ctrl+C. ( it'll stop within few seconds with OLD school TV animation .
+
+
+credit goes to me , your Reinhart 
