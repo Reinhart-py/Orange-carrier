@@ -1,9 +1,14 @@
-# OrangeCarrier Tg bot
+# OrangeCarrier Sentinel
 
-A Python bot for real-time OrangeCarrier CDR monitoring and alerting via Telegram. Built to run silently .
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python" alt="Python Version">
+  <img src="https://img.shields.io/badge/Status-Operational-brightgreen?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License">
+</p>
+
+An asynchronous Python bot for real-time OrangeCarrier CDR monitoring and alerting via Telegram. Built to run silently and persistently with a cinematic terminal UI.
 
 ### Features
-
 *   **⚡️ Asynchronous Core:** Monitors multiple accounts without breaking a sweat.
 *   **💾 Persistent Config:** Set it once. Runs forever. Edit on the fly.
 *   **🎬 Cinematic UI:** A one-time story intro and a silent, animated running status.
@@ -11,40 +16,16 @@ A Python bot for real-time OrangeCarrier CDR monitoring and alerting via Telegra
 *   **🚀 Real-time Alerts:** Instant CDR notifications sent to your designated Telegram chat.
 
 ### Tech Stack
-
 *   **Python 3**
 *   **`python-telegram-bot`**
 *   **`httpx`**
-*   **`BeautifulSoup4`**
+*   **`beautifulsoup4`**
 
-### Setup
+---
 
-Get it running in three steps.
+### Quick Start: All-in-One Command
 
-1️⃣ **Clone the repo:**
+This single command will install dependencies, clone the repo, install Python packages, and launch the bot. Designed for Termux but easily adaptable.
+
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name```
-
-
-2️⃣**Install the goods**
-
-code
-```Bash
-pip install python-telegram-bot httpx beautifulsoup4```
-
-3️⃣**Fire it up**:
-code
-```Bash
-python your_script_name.py```
-
-
-
-
-
-**Configuration**
-
-On the first run, the script will launch a setup wizard to create your orange_config.json. You'll be prompted for your bot token, chat IDs, and account credentials. ( log group is optional)
-
-On subsequent runs, it will use the saved config and give you the option to edit. All business happens in the background.
-To stop the bot, press Ctrl+C.
+pkg update && pkg upgrade -y && pkg install git python -y && git clone https://github.com/Reinhart-py/Orange-carrier.git && cd Orange-carrier && pip install -r requirements.txt && python run.py
