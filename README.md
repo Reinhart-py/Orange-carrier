@@ -6,14 +6,11 @@
   <img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License">
 </p>
 
-An asynchronous Python bot for real-time OrangeCarrier CDR monitoring and alerting via Telegram. Built to run silently and persistently with a cinematic terminal UI.
+A Python bot for real-time OrangeCarrier CDR monitoring and alerting via Telegram. 
 
-### Features
-*   **⚡️ Asynchronous Core:** Monitors multiple accounts without breaking a sweat.
-*   **💾 Persistent Config:** Set it once. Runs forever. Edit on the fly.
-*   **🎬 Cinematic UI:** A one-time story intro and a silent, animated running status.
-*   **🤫 Silent Operation:** Terminal stays clean. Critical alerts are sent to a dedicated log channel.
-*   **🚀 Real-time Alerts:** Instant CDR notifications sent to your designated Telegram chat.
+
+**features?***
+Monitors multiple accounts , Set it once and Runs forever , easy to edit if you want, A one-time funny unnecessary story intro cuz why not ? Terminal stays clean. Critical alerts are sent to a dedicated log channel , Instant CDR notifications sent to your designated Telegram chat.
 
 ### Tech Stack
 *   **Python 3**
@@ -25,7 +22,7 @@ An asynchronous Python bot for real-time OrangeCarrier CDR monitoring and alerti
 
 ### Quick Start: All-in-One Command
 
-This single command will install dependencies, clone the repo, install Python packages, and launch the bot. Designed for Termux but easily adaptable.
+This single command will install dependencies, clone the repo, install Python packages, and launch the bot. Designed for Termux but easily adaptable. ( i might upload a simplified version later cuz this one is fu*ked up ) 
 
 ```bash
 pkg update && pkg upgrade -y && pkg install git python -y && git clone https://github.com/Reinhart-py/Orange-carrier.git && cd Orange-carrier && pip install -r requirements.txt && python run.py
@@ -36,9 +33,9 @@ pkg update && pkg upgrade -y && pkg install git python -y && git clone https://g
 
 The bot uses a persistent orange_config.json file to store your credentials.
 
-First Run: The command above will launch a setup wizard. You will be prompted to enter your BOT_TOKEN, CHAT_ID, optional LOG_CHAT_ID, and account details.
+First Run: The command above will launch a setup TUI . You will be prompted to enter your BOT_TOKEN, CHAT_ID, optional LOG_CHAT_ID, and account details.
 
-Subsequent Runs: The bot will load the existing config and ask if you want to edit it (Edit? (y/N)). Pressing Enter will run the bot with the saved credentials.
+On Next Run: The bot will load the existing config and ask if you want to edit it (Edit? (y/N)). Pressing Enter will run the bot with the saved credentials.
 
 ------------------------------
 
